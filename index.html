@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parkour Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div>Nivel: <span id="nivelLabel">1</span></div>
+        <div>Vidas: <span id="vidasLabel">3</span></div>
+        <div>Tiempo: <span id="tiempoLabel">0</span>s</div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div id="overlay" class="overlay visible">
+        <div class="panel">
+          <h1>Parkour Challenge</h1>
+          <p id="mensaje">Haz clic para comenzar</p>
+          <button id="startBtn">Jugar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
